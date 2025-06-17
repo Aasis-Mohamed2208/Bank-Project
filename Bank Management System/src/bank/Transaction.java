@@ -19,6 +19,6 @@ public class Transaction {
     public String toString() {
         DateTimeFormatter format = DateTimeFormatter.ofPattern("dd MMM yyyy, hh:mm a");
         String formattedTime = timestamp.format(format);
-        return "Account Number "+ accNo +"("+ type + "): " + "₹" + amount + " on " + timestamp;
+        return "Account Number "+ accNo +"("+ type + "): " + "₹" + amount + " on " + formattedTime;
     }
 }
