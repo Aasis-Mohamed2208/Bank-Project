@@ -1,4 +1,4 @@
-﻿#Bank Management System 🏦
+﻿# Bank Management System 🏦
  
 ****A simple Java-based Banking System with a MySQL database backend.
 Supports basic banking operations like account creation, login, balance management, and transaction history.****
