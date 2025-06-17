@@ -1,5 +1,5 @@
 package bank;
-
+import java.time.format.DateTimeFormatter;
 import java.time.LocalDateTime;
 
 public class Transaction {
@@ -17,6 +17,8 @@ public class Transaction {
 
     @Override
     public String toString() {
+        DateTimeFormatter format = DateTimeFormatter.ofPattern("dd MMM yyyy, hh:mm a");
+        String formattedTime = timestamp.format(format);
         return "Account Number "+ accNo +"("+ type + "): " + "₹" + amount + " on " + timestamp;
     }
 }
