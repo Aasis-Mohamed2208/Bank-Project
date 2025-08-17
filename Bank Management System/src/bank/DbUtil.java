@@ -11,9 +11,9 @@ public class DbUtil {
 
     private static final Logger LOGGER = Logger.getLogger(DbUtil.class.getName());
 
-    private static final String db_url = "jdbc:mysql://localhost:3306/bank_system";
-    private static final String db_user = "root";
-    private static final String db_password = "aasis_ar22..";
+    private static final String db_url = "your_url";
+    private static final String db_user = "user_name";
+    private static final String db_password = "your_pass";
 
     private static Connection connect() throws SQLException {
         return DriverManager.getConnection(db_url, db_user, db_password);
@@ -99,3 +99,4 @@ public class DbUtil {
 
 
 }
+
